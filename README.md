@@ -10,10 +10,11 @@ This blogging platform has core features such as creating blogs, updating blogs,
 
 The project also includes additional features like:
 
-- Filter search: Allows users to search for blogs based on specific criteria.
 - JWT token: Implements JSON Web Tokens for secure authentication.
-- Forgot password: Includes a feature to send an email to users who have forgotten their password
-- For each blog, only authenticated users can react (like, love, sad, ...) and comment
+- Forgot password: Includes a feature to send an email to users who have forgotten their password.
+- Update profile
+- Filter search: Allows users to search for blogs based on specific criteria.
+- For each blog, only authenticated users can react (like, love, sad, ...) and comment.
 
 ## Getting Started
 
