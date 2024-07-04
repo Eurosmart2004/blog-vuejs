@@ -2,6 +2,8 @@
 
 This project is a blogging platform that includes both a client and a server.
 
+Link demo: https://blog-vuejs-frontend.vercel.app/
+
 ## Description
 
 This blogging platform has core features such as creating blogs, updating blogs, viewing blogs, as well as user authentication features like login and register.
