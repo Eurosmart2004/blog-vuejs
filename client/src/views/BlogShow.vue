@@ -129,7 +129,7 @@ export default {
       );
       this.numberReact = response.data.numberReact;
       this.mostCommonReacts = response.data.mostCommonReacts;
-      if (this.$store.state.userData) {
+      if (this.$store.state.userData !== null) {
         response = await instance.get(
           `/react/getReact?blogId=${this.$route.params.id}`
         );

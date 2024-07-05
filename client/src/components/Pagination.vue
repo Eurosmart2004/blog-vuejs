@@ -31,10 +31,10 @@ export default {
       default: 4,
     },
   },
-  computed: {
-    currentPage() {
-      return this.page;
-    },
+  data() {
+    return {
+      currentPage: this.page,
+    };
   },
   methods: {
     onClickHandler(page) {

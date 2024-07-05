@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
+import store from "@/store/store";
+import { refreshToken } from "@/axios/instance";
 import Home from "../views/Home.vue";
 import Blog from "../views/Blog.vue";
 import Login from "../views/Login.vue";
@@ -6,15 +8,22 @@ import Register from "../views/Register.vue";
 import ForgotPassword from "../views/ForgotPassword.vue";
 import Profile from "../views/Profile.vue";
 import CreateBlog from "../views/CreateBlog.vue";
-import store from "@/store/store";
-import { refreshToken } from "@/axios/instance";
 import BlogPreview from "@/components/BlogPreview.vue";
 import BlogShow from "@/views/BlogShow.vue";
 import BlogEdit from "@/views/BlogEdit.vue";
 import ResetPassword from "@/views/ResetPassword.vue";
+import PageNotFound from "@/views/PageNotFound.vue";
 const router = createRouter({
   history: createWebHistory("/"),
   routes: [
+    {
+      path: "/:catchAll(.*)",
+      name: "NotFound",
+      component: PageNotFound,
+      meta: {
+        title: "Page Not Found",
+      },
+    },
     {
       path: "/",
       name: "Home",

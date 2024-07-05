@@ -384,6 +384,7 @@ export default {
         this.$store.dispatch("getBlogByUserId");
         this.isLoading = false;
       } catch (error) {
+        console.log(error);
         this.toast.error(error.response.data.message, {
           position: "bottom-right",
         });
