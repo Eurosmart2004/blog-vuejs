@@ -4,7 +4,7 @@
     <!-- User -->
     <div v-if="this.$store.state.userData" class="px-md-5">
       <div class="flex-row d-inline-flex pt-5 pb-3">
-        <span class="fs-6">Toggle Editing Post</span>
+        <span class="fs-6">Toggle Editing Blog</span>
         <input
           class="ms-4"
           type="checkbox"
